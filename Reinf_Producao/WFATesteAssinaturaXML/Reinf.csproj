@@ -1,0 +1,574 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{667106C9-0DA6-4618-B955-7E4B0BCFBB65}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WFATesteAssinaturaXML</RootNamespace>
+    <AssemblyName>Reinf</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <PublishUrl>\\wdciis03\REINF%24\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Unc</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Background</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>true</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <TargetCulture>pt-BR</TargetCulture>
+    <ProductName>REINF</ProductName>
+    <PublisherName>Enseada - Sistemas</PublisherName>
+    <SuiteName>REINF</SuiteName>
+    <MinimumRequiredVersion>1.0.0.0</MinimumRequiredVersion>
+    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
+    <WebPage>publish.htm</WebPage>
+    <ApplicationRevision>54</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>1FF2B91FF1916D43A40A5D7EF1628CE54F77C645</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Reinf_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>efd-reinf.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Oracle.ManagedDataAccess, Version=4.122.1.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=MSIL">
+      <HintPath>..\packages\Oracle.ManagedDataAccess.12.2.1100\lib\net40\Oracle.ManagedDataAccess.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Assinatura.cs" />
+    <Compile Include="Versaoes Anteriores\ConsultasReinf_V1.04.cs" />
+    <Compile Include="frmConferencia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConferencia.Designer.cs">
+      <DependentUpon>frmConferencia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDadosR4020PgtInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDadosR4020PgtInfo.Designer.cs">
+      <DependentUpon>frmDadosR4020PgtInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDadosR4020Pgt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDadosR4020Pgt.Designer.cs">
+      <DependentUpon>frmDadosR4020Pgt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDadosR4020.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDadosR4020.Designer.cs">
+      <DependentUpon>frmDadosR4020.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDadosR4010BENPgt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDadosR4010BENPgt.Designer.cs">
+      <DependentUpon>frmDadosR4010BENPgt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDadosR4010BEN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDadosR4010BEN.Designer.cs">
+      <DependentUpon>frmDadosR4010BEN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDadosR4010.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDadosR4010.Designer.cs">
+      <DependentUpon>frmDadosR4010.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDadosR2010.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDadosR2010.Designer.cs">
+      <DependentUpon>frmDadosR2010.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDadosR2010NFS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDadosR2010NFS.Designer.cs">
+      <DependentUpon>frmDadosR2010NFS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDadosR2060tipoAjuste.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDadosR2060tipoAjuste.Designer.cs">
+      <DependentUpon>frmDadosR2060tipoAjuste.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDadosR2010tpServ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDadosR2010tpServ.Designer.cs">
+      <DependentUpon>frmDadosR2010tpServ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDadosR2060tipoCod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDadosR2060tipoCod.Designer.cs">
+      <DependentUpon>frmDadosR2060tipoCod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDadosR2060.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDadosR2060.Designer.cs">
+      <DependentUpon>frmDadosR2060.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDadosR5011.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDadosR5011.Designer.cs">
+      <DependentUpon>frmDadosR5011.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDadosR9000.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDadosR9000.Designer.cs">
+      <DependentUpon>frmDadosR9000.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInfoR4010.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInfoR4010.Designer.cs">
+      <DependentUpon>frmInfoR4010.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInfoR5011.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInfoR5011.Designer.cs">
+      <DependentUpon>frmInfoR5011.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNovoR4010.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNovoR4010.Designer.cs">
+      <DependentUpon>frmNovoR4010.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNovoR2010.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNovoR2010.Designer.cs">
+      <DependentUpon>frmNovoR2010.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNovoR2060.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNovoR2060.Designer.cs">
+      <DependentUpon>frmNovoR2060.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDadosR2098.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDadosR2098.Designer.cs">
+      <DependentUpon>frmDadosR2098.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDadosR2099.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDadosR2099.Designer.cs">
+      <DependentUpon>frmDadosR2099.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDadosR1000.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDadosR1000.Designer.cs">
+      <DependentUpon>frmDadosR1000.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDadosResponsaveis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDadosResponsaveis.Designer.cs">
+      <DependentUpon>frmDadosResponsaveis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDadosEvento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDadosEvento.Designer.cs">
+      <DependentUpon>frmDadosEvento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDadosEstabelecimento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDadosEstabelecimento.Designer.cs">
+      <DependentUpon>frmDadosEstabelecimento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDadosEmpresa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDadosEmpresa.Designer.cs">
+      <DependentUpon>frmDadosEmpresa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInfoR9000.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInfoR9000.Designer.cs">
+      <DependentUpon>frmInfoR9000.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmResponsaveis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmResponsaveis.Designer.cs">
+      <DependentUpon>frmResponsaveis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEventos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEventos.Designer.cs">
+      <DependentUpon>frmEventos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEstabelecimentos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEstabelecimentos.Designer.cs">
+      <DependentUpon>frmEstabelecimentos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEmpresas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEmpresas.Designer.cs">
+      <DependentUpon>frmEmpresas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInfoR2060.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInfoR2060.Designer.cs">
+      <DependentUpon>frmInfoR2060.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMonitorEventos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMonitorEventos.Designer.cs">
+      <DependentUpon>frmMonitorEventos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInfoR2099.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInfoR2099.Designer.cs">
+      <DependentUpon>frmInfoR2099.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInfoR2098.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInfoR2098.Designer.cs">
+      <DependentUpon>frmInfoR2098.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInfoR1000.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInfoR1000.Designer.cs">
+      <DependentUpon>frmInfoR1000.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInfoR2010.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInfoR2010.Designer.cs">
+      <DependentUpon>frmInfoR2010.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrincipal.Designer.cs">
+      <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmWebBrowser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWebBrowser.Designer.cs">
+      <DependentUpon>frmWebBrowser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmWorkFlow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWorkFlow.Designer.cs">
+      <DependentUpon>frmWorkFlow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Versaoes Anteriores\reinf_pre_V1.04.cs" />
+    <Compile Include="Versaoes Anteriores\reinf_pre_V1.00.cs" />
+    <Compile Include="Versaoes Anteriores\reinf_pre_V1.02.cs" />
+    <Compile Include="Versaoes Anteriores\reinf_pre_V1.03.cs" />
+    <Compile Include="WSDL\DEV\WsReinf.cs" />
+    <Compile Include="WSDL\DEV\WsReinfConsultas.cs" />
+    <Compile Include="WSDL\WsReinf.cs" />
+    <Compile Include="WSDL\WsReinfConsultas.cs" />
+    <EmbeddedResource Include="frmConferencia.resx">
+      <DependentUpon>frmConferencia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDadosR4020PgtInfo.resx">
+      <DependentUpon>frmDadosR4020PgtInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDadosR4020Pgt.resx">
+      <DependentUpon>frmDadosR4020Pgt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDadosR4020.resx">
+      <DependentUpon>frmDadosR4020.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDadosR4010BENPgt.resx">
+      <DependentUpon>frmDadosR4010BENPgt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDadosR4010BEN.resx">
+      <DependentUpon>frmDadosR4010BEN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDadosR4010.resx">
+      <DependentUpon>frmDadosR4010.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDadosR2010.resx">
+      <DependentUpon>frmDadosR2010.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDadosR2010NFS.resx">
+      <DependentUpon>frmDadosR2010NFS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDadosR2060tipoAjuste.resx">
+      <DependentUpon>frmDadosR2060tipoAjuste.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDadosR2010tpServ.resx">
+      <DependentUpon>frmDadosR2010tpServ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDadosR2060tipoCod.resx">
+      <DependentUpon>frmDadosR2060tipoCod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDadosR2060.resx">
+      <DependentUpon>frmDadosR2060.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDadosR5011.resx">
+      <DependentUpon>frmDadosR5011.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDadosR9000.resx">
+      <DependentUpon>frmDadosR9000.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInfoR4010.resx">
+      <DependentUpon>frmInfoR4010.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInfoR5011.resx">
+      <DependentUpon>frmInfoR5011.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNovoR4010.resx">
+      <DependentUpon>frmNovoR4010.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNovoR2010.resx">
+      <DependentUpon>frmNovoR2010.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNovoR2060.resx">
+      <DependentUpon>frmNovoR2060.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDadosR2098.resx">
+      <DependentUpon>frmDadosR2098.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDadosR2099.resx">
+      <DependentUpon>frmDadosR2099.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDadosR1000.resx">
+      <DependentUpon>frmDadosR1000.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDadosResponsaveis.resx">
+      <DependentUpon>frmDadosResponsaveis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDadosEvento.resx">
+      <DependentUpon>frmDadosEvento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDadosEstabelecimento.resx">
+      <DependentUpon>frmDadosEstabelecimento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDadosEmpresa.resx">
+      <DependentUpon>frmDadosEmpresa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInfoR9000.resx">
+      <DependentUpon>frmInfoR9000.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmResponsaveis.resx">
+      <DependentUpon>frmResponsaveis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEventos.resx">
+      <DependentUpon>frmEventos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEstabelecimentos.resx">
+      <DependentUpon>frmEstabelecimentos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEmpresas.resx">
+      <DependentUpon>frmEmpresas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInfoR2060.resx">
+      <DependentUpon>frmInfoR2060.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMonitorEventos.resx">
+      <DependentUpon>frmMonitorEventos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInfoR2099.resx">
+      <DependentUpon>frmInfoR2099.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInfoR2098.resx">
+      <DependentUpon>frmInfoR2098.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInfoR1000.resx">
+      <DependentUpon>frmInfoR1000.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInfoR2010.resx">
+      <DependentUpon>frmInfoR2010.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrincipal.resx">
+      <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWebBrowser.resx">
+      <DependentUpon>frmWebBrowser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWorkFlow.resx">
+      <DependentUpon>frmWorkFlow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Versaoes Anteriores\ConsultasReinf_V1.04.WSDL" />
+    <None Include="Informacoes Uteis\Evento R2060.docx" />
+    <None Include="Informacoes Uteis\PastaXSDReinf.xlsx" />
+    <None Include="Informacoes Uteis\PastaXSDReinf_v1_02.xlsx" />
+    <None Include="Informacoes Uteis\PComparação eventos 1,2 x 1,3.xlsx" />
+    <None Include="Informacoes Uteis\R2010.xls" />
+    <None Include="Informacoes Uteis\R2060.xls" />
+    <None Include="Informacoes Uteis\TABELAS.docx" />
+    <None Include="Informacoes Uteis\v1.01\Alimenta o Evento 2070.docx" />
+    <None Include="Informacoes Uteis\v1.01\Leiautes da EFD-Reinf v1.1.pdf" />
+    <None Include="Informacoes Uteis\v1.01\Manual de Orientação da EFD-Reinf v 1.1.pdf" />
+    <None Include="Informacoes Uteis\v1.01\ManualOrientacaoDesenvolvedor-REINF v1.1.doc" />
+    <None Include="Informacoes Uteis\v1.01\Pacote_XSD_Comunicacao_EFD-Reinf WSDL.zip" />
+    <None Include="Informacoes Uteis\v1.01\Pacote_XSD_Comunicacao_EFD-Reinf_v1.1.01.zip" />
+    <None Include="Informacoes Uteis\v1.01\Pacote_XSD_eventos_Reinf 1.01.01.zip" />
+    <None Include="Informacoes Uteis\v1.01\Regras de Validacao_REINF.docx" />
+    <None Include="Informacoes Uteis\v1.02\Controle de alteraçoes Leiautes 1_1 para 1_2.pdf" />
+    <None Include="Informacoes Uteis\v1.02\Leiautes da EFD-Reinf v1_2.pdf" />
+    <None Include="Informacoes Uteis\v1.02\PacoteXsd1.2.zip" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Reinf_TemporaryKey.pfx" />
+    <None Include="Versaoes Anteriores\reinf_pre_V1.04.wsdl" />
+    <None Include="Versaoes Anteriores\reinf_pre_V1.00.wsdl" />
+    <None Include="Versaoes Anteriores\reinf_pre_V1.02.wsdl" />
+    <None Include="Versaoes Anteriores\reinf_pre_V1.03.wsdl" />
+    <None Include="WSDL\WsReinf.wsdl" />
+    <None Include="WSDL\WsReinfConsultas.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ModelClassLibrary\ReinfModelClassLibrary.csproj">
+      <Project>{cc0af9cb-1c76-4f44-9823-979907f91c1c}</Project>
+      <Name>ReinfModelClassLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RefinDBClassLibrary\ReinfDBClassLibrary.csproj">
+      <Project>{37e27f4e-3328-483f-904b-cff6ff932d8f}</Project>
+      <Name>ReinfDBClassLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="efd-reinf.ico" />
+    <Content Include="Informacoes Uteis\efd-reinf.ico" />
+    <Content Include="Informacoes Uteis\wsdl PARA cs.xml" />
+    <Content Include="Informacoes Uteis\xsdtoClass.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,1 @@
+﻿<%@ WebService Language="C#" CodeBehind="WebServiceAnexo.asmx.cs" Class="WebServiceGPEND.Service1" %>

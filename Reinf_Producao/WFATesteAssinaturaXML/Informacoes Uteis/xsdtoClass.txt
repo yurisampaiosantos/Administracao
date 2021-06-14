@@ -1,0 +1,12 @@
+xsd.exe evtEspDesportivo-v1_01_01.xsd xmldsig-core-schema.xsd /l:cs /c /n:EventosReinf
+xsd.exe evtExclusao-v1_01_01.xsd xmldsig-core-schema.xsd /l:cs /c /n:EventosReinf
+xsd.exe evtFechamento-v1_01_01.xsd xmldsig-core-schema.xsd /l:cs /c /n:EventosReinf
+xsd.exe evtInfoCPRB-v1_01_01.xsd xmldsig-core-schema.xsd /l:cs /c /n:EventosReinf
+xsd.exe evtInfoProdRural-v1_01_01.xsd xmldsig-core-schema.xsd /l:cs /c /n:EventosReinf
+xsd.exe evtPagamentosDiversos-v1_01_01.xsd xmldsig-core-schema.xsd /l:cs /c /n:EventosReinf
+xsd.exe evtPrestadorServicos-v1_01_01.xsd xmldsig-core-schema.xsd /l:cs /c /n:EventosReinf
+xsd.exe evtReabreEvPer-v1_01_01.xsd xmldsig-core-schema.xsd /l:cs /c /n:EventosReinf
+xsd.exe evtRecursoRecebidoAssociacao-v1_01_01.xsd xmldsig-core-schema.xsd /l:cs /c /n:EventosReinf
+xsd.exe evtRecursoRepassadoAssociacao-v1_01_01.xsd xmldsig-core-schema.xsd /l:cs /c /n:EventosReinf
+xsd.exe evtTabProcesso-v1_01_01.xsd xmldsig-core-schema.xsd /l:cs /c /n:EventosReinf
+xsd.exe retornoTotalizadorContribuinte-v1_01_01.xsd xmldsig-core-schema.xsd /l:cs /c /n:EventosReinf
